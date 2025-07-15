@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Services.Launcher", "Veritas.Services.Launcher\Veritas.Services.Launcher.csproj", "{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.McoSettings", "Veritas.Library.McoSettings\Veritas.Library.McoSettings.csproj", "{D42170D8-E1BD-487E-A5E9-1B497A27593C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clientside", "Clientside", "{A6EA3201-DAF9-4910-94F8-32EAEB5BBC21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serverside", "Serverside", "{074756B6-2E7D-4010-A6AA-1B6295D40582}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Service.Server", "Veritas.Service.Server\Veritas.Service.Server.csproj", "{4AF9E9C6-34B9-45B9-AE05-1E0F4BD84854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.Database", "Veritas.Library.Database\Veritas.Library.Database.csproj", "{EB0CDF83-F238-4706-9CF4-E296269025FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9518B98B-67EB-452C-AE4F-3AF249011B9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.Configuration", "Veritas.Library.Configuration\Veritas.Library.Configuration.csproj", "{8D36809A-EB63-40F3-97D4-E36E4FA61D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.Logging", "Veritas.Library.Logging\Veritas.Library.Logging.csproj", "{1D9B1B65-035A-47BD-8E80-B2C70531BD81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D42170D8-E1BD-487E-A5E9-1B497A27593C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42170D8-E1BD-487E-A5E9-1B497A27593C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D42170D8-E1BD-487E-A5E9-1B497A27593C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D42170D8-E1BD-487E-A5E9-1B497A27593C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF9E9C6-34B9-45B9-AE05-1E0F4BD84854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF9E9C6-34B9-45B9-AE05-1E0F4BD84854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF9E9C6-34B9-45B9-AE05-1E0F4BD84854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF9E9C6-34B9-45B9-AE05-1E0F4BD84854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB0CDF83-F238-4706-9CF4-E296269025FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0CDF83-F238-4706-9CF4-E296269025FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0CDF83-F238-4706-9CF4-E296269025FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB0CDF83-F238-4706-9CF4-E296269025FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D36809A-EB63-40F3-97D4-E36E4FA61D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D36809A-EB63-40F3-97D4-E36E4FA61D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D36809A-EB63-40F3-97D4-E36E4FA61D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D36809A-EB63-40F3-97D4-E36E4FA61D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9B1B65-035A-47BD-8E80-B2C70531BD81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9B1B65-035A-47BD-8E80-B2C70531BD81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9B1B65-035A-47BD-8E80-B2C70531BD81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9B1B65-035A-47BD-8E80-B2C70531BD81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AF9E9C6-34B9-45B9-AE05-1E0F4BD84854} = {074756B6-2E7D-4010-A6AA-1B6295D40582}
+		{D42170D8-E1BD-487E-A5E9-1B497A27593C} = {A6EA3201-DAF9-4910-94F8-32EAEB5BBC21}
+		{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795} = {A6EA3201-DAF9-4910-94F8-32EAEB5BBC21}
+		{EB0CDF83-F238-4706-9CF4-E296269025FF} = {074756B6-2E7D-4010-A6AA-1B6295D40582}
+		{8D36809A-EB63-40F3-97D4-E36E4FA61D28} = {9518B98B-67EB-452C-AE4F-3AF249011B9A}
+		{1D9B1B65-035A-47BD-8E80-B2C70531BD81} = {9518B98B-67EB-452C-AE4F-3AF249011B9A}
+	EndGlobalSection
+EndGlobal

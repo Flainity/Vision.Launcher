@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Veritas.Services.Launcher.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Veritas.Services.Launcher.View"
+             xmlns:viewmodel="clr-namespace:Veritas.Services.Launcher.ViewModel"
+             xmlns:view="clr-namespace:Veritas.Services.Launcher.View"
+             xmlns:fa="http://schemas.fontawesome.io/icons/"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="600" Background="#222" d:DataContext="{d:DesignInstance viewmodel:HomeViewModel}">
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ResourceDictionary/General/Button.xaml"/>
+                <ResourceDictionary Source="../ResourceDictionary/General/ProgressBar.xaml"/>
+                <ResourceDictionary Source="../ResourceDictionary/General/TextBox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <fa:ImageAwesome Icon="UserCircle" Height="25" Foreground="DarkGray"/>
+                <Label Grid.Column="1" Content="Not signed in" Margin="0,0,10,0" Foreground="DarkGray"/>
+            </Grid>
+        </StackPanel>
+        
+        <Border Grid.Row="1" Background="#1B1E26" CornerRadius="12" Padding="20" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel>
+                <Viewbox Height="40" Margin="0,0,0,10">
+                    <TextBlock Text="🔐" FontSize="30" Foreground="#4CA3F7"/>
+                </Viewbox>
+                <TextBlock Text="Login" FontSize="22" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                <TextBox Text="{Binding Username}" Margin="0,0,0,10" Background="#22262E" Foreground="White" BorderBrush="#4CA3F7" BorderThickness="1" Padding="6"/>
+                <TextBox Text="{Binding Password}" Margin="0,0,0,20" Background="#22262E" Foreground="White" BorderBrush="#4CA3F7" BorderThickness="1" Padding="6"/>
+                <Button Command="{Binding SendLoginCommand}" Content="Login" Background="#4CA3F7" Foreground="White" Padding="10" FontWeight="Bold" BorderThickness="0"/>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Left">
+                    <CheckBox Foreground="White" Content="Remember me"/>
+                    <TextBlock Text="  Forgot Password?" Foreground="#4CA3F7" Cursor="Hand"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        
+        <Border Grid.Row="0" Grid.RowSpan="2" Background="#000000" Opacity="0.5" Visibility="{Binding IsLoginProcess, Converter={StaticResource BooleanToVisibilityConverter}}">
+            
+        </Border>
+
+        <fa:ImageAwesome Spin="True" Grid.Row="1" Icon="Spinner" Height="25" Foreground="DarkGray" Visibility="{Binding IsLoginProcess, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+    </Grid>
+</UserControl>
