@@ -3,8 +3,8 @@ using System.Net;
 using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
-using Veritas.Library.Database.Context;
-using Veritas.Library.Database.Schema.Account;
+using Library.Database.Context;
+using Library.Database.Schema.Account;
 using Veritas.Service.Server.Encryption;
 using Veritas.Service.Server.Localization;
 

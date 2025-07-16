@@ -2,8 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Veritas.Library.Configuration.Services;
-using Veritas.Library.Database.Context;
+using Library.Configuration.Services;
+using Library.Database.Context;
 using Veritas.Service.Server.Encryption;
 using Veritas.Service.Server.Services;
 

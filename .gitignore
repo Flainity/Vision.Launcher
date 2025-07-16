@@ -1,20 +1,26 @@
 /.idea/
 /.vs/
 
-/Veritas.Services.Launcher/bin/
-/Veritas.Services.Launcher/obj/
+/Application.Launcher/bin/
+/Application.Launcher/obj/
 
 /Veritas.Service.Server/bin/
 /Veritas.Service.Server/obj/
 
-/Veritas.Library.McoSettings/bin/
-/Veritas.Library.McoSettings/obj/
+/Library.McoSettings/bin/
+/Library.McoSettings/obj/
 
-/Veritas.Library.Logging/bin/
-/Veritas.Library.Logging/obj/
+/Library.Logging/bin/
+/Library.Logging/obj/
 
-/Veritas.Library.Database/bin/
-/Veritas.Library.Database/obj/
+/Library.Database/bin/
+/Library.Database/obj/
 
-/Veritas.Library.Configuration/bin/
-/Veritas.Library.Configuration/obj/
+/Library.Configuration/bin/
+/Library.Configuration/obj/
+
+/Debug.Clientside/
+/Debug.Serverside/
+
+/Release.Clientside/
+/Release.Serverside/

@@ -7,9 +7,17 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>..\Debug.Serverside\</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <OutputPath>..\Release.Serverside\</OutputPath>
+    </PropertyGroup>
+
     <ItemGroup>
-      <ProjectReference Include="..\Veritas.Library.Configuration\Veritas.Library.Configuration.csproj" />
-      <ProjectReference Include="..\Veritas.Library.Database\Veritas.Library.Database.csproj" />
+      <ProjectReference Include="..\Library.Configuration\Library.Configuration.csproj" />
+      <ProjectReference Include="..\Library.Database\Library.Database.csproj" />
     </ItemGroup>
 
     <ItemGroup>

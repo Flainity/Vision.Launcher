@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Services.Launcher", "Veritas.Services.Launcher\Veritas.Services.Launcher.csproj", "{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Launcher", "Application.Launcher\Application.Launcher.csproj", "{E5DA1BD8-06E9-46BA-99A4-D5A00D7C2795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.McoSettings", "Veritas.Library.McoSettings\Veritas.Library.McoSettings.csproj", "{D42170D8-E1BD-487E-A5E9-1B497A27593C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.McoSettings", "Library.McoSettings\Library.McoSettings.csproj", "{D42170D8-E1BD-487E-A5E9-1B497A27593C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clientside", "Clientside", "{A6EA3201-DAF9-4910-94F8-32EAEB5BBC21}"
 EndProject
@@ -10,13 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serverside", "Serverside", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Service.Server", "Veritas.Service.Server\Veritas.Service.Server.csproj", "{4AF9E9C6-34B9-45B9-AE05-1E0F4BD84854}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.Database", "Veritas.Library.Database\Veritas.Library.Database.csproj", "{EB0CDF83-F238-4706-9CF4-E296269025FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Database", "Library.Database\Library.Database.csproj", "{EB0CDF83-F238-4706-9CF4-E296269025FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9518B98B-67EB-452C-AE4F-3AF249011B9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.Configuration", "Veritas.Library.Configuration\Veritas.Library.Configuration.csproj", "{8D36809A-EB63-40F3-97D4-E36E4FA61D28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Configuration", "Library.Configuration\Library.Configuration.csproj", "{8D36809A-EB63-40F3-97D4-E36E4FA61D28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritas.Library.Logging", "Veritas.Library.Logging\Veritas.Library.Logging.csproj", "{1D9B1B65-035A-47BD-8E80-B2C70531BD81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Logging", "Library.Logging\Library.Logging.csproj", "{1D9B1B65-035A-47BD-8E80-B2C70531BD81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

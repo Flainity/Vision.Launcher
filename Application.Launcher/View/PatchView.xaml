@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Application.Launcher.View.PatchView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Application.Launcher.View"
+             xmlns:viewmodel="clr-namespace:Application.Launcher.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="100" d:DesignWidth="600" Background="Transparent" d:DataContext="{d:DesignInstance viewmodel:HomeViewModel}">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ResourceDictionary/General/Button.xaml"/>
+                <ResourceDictionary Source="../ResourceDictionary/General/ProgressBar.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Button Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Margin="10" IsEnabled="{Binding IsPlayable}" Style="{StaticResource StartButton}" Content="START" Command="{Binding ClickStartCommand}"/>
+        
+        <ProgressBar Grid.Row="1" Grid.Column="1" Margin="0,0,10,10" Value="{Binding DownloadProgress}"/>
+        <ProgressBar Grid.Row="2" Grid.Column="1" Margin="0,0,10,10" Value="{Binding ExtractProgress}"/>
+        
+        <Label Grid.Row="0" Grid.Column="1" Content="{Binding UpdateStatus}" Foreground="White"/>
+
+        <Border Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="2" Background="#000000" Opacity="0.5" Visibility="{Binding IsLoginProcess, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+    </Grid>
+</UserControl>
